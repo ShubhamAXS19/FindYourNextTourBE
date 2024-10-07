@@ -1,0 +1,954 @@
+[
+{
+"startLocation": {
+  "description": "Yostcester, United States of America",
+  "type": "Point",
+  "coordinates": [
+    -144.5203,
+    -21.0759
+  ],
+  "address": "643 Kristian Flats"
+},
+"ratingsAverage": 4.4,
+"ratingsQuantity": 50,
+"images": [
+  "https://picsum.photos/seed/vLPqktPZ/577/1077",
+  "https://loremflickr.com/2294/3629?lock=8424483818523222",
+  "https://picsum.photos/seed/bW4M7m5E/642/1463"
+],
+"startDates": [
+  "2024-07-04T02:43:29.395Z",
+  "2025-01-31T09:33:21.463Z",
+  "2024-10-04T20:19:02.780Z"
+],
+"_id": "cfafefc6bde722c4126b3b86",
+"name": "Modern Soft Bike",
+"duration": 3,
+"maxGroupSize": 11,
+"difficulty": "easy",
+"guides": [
+  "f3c872377adb9c9276df36fe",
+  "feeaddbc083c911bfa24fddb"
+],
+"price": 2621,
+"summary": "Degero templum sui titulus.",
+"description": "Vicissitudo catena eum crebro aedificium defendo vulariter desolo cupiditate. Sortitus carmen consuasor titulus. Tubineus abscido comminor.\nSuspendo auxilium auxilium cupiditas conor sonitus veniam. Villa ad tibi curso defero aperiam vorago provident altus. Talio asporto fugiat.",
+"imageCover": "https://picsum.photos/seed/M72EiHsp4J/2814/3712",
+"locations": [
+  {
+    "_id": "c2e4aac3a9e92c86e8b890b8",
+    "description": "Lueilwitz - Stehr",
+    "type": "Point",
+    "coordinates": [
+      -86.2805,
+      -20.0774
+    ],
+    "day": 1
+  },
+  {
+    "_id": "e1c94acdcdbfcfea68bf0fd6",
+    "description": "Franey, Hilll and Grimes",
+    "type": "Point",
+    "coordinates": [
+      -95.2191,
+      21.9388
+    ],
+    "day": 3
+  },
+  {
+    "_id": "658bacdfccc3edffa3b213f6",
+    "description": "Monahan LLC",
+    "type": "Point",
+    "coordinates": [
+      130.8931,
+      8.0065
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Gerlachstead, Holy See (Vatican City State)",
+  "type": "Point",
+  "coordinates": [
+    108.0613,
+    -11.0118
+  ],
+  "address": "8468 Dion Lock"
+},
+"ratingsAverage": 4.9,
+"ratingsQuantity": 1,
+"images": [
+  "https://loremflickr.com/1842/1305?lock=8830087625480009",
+  "https://loremflickr.com/3938/2651?lock=1519271593409263",
+  "https://loremflickr.com/3172/991?lock=1269545800359635"
+],
+"startDates": [
+  "2023-10-08T21:15:20.151Z",
+  "2023-12-07T07:28:33.884Z",
+  "2025-09-20T11:06:30.418Z"
+],
+"_id": "1dcdfedd13ecaa85bb2dfff0",
+"name": "Incredible Granite Gloves",
+"duration": 4,
+"maxGroupSize": 9,
+"difficulty": "difficult",
+"guides": [
+  "e7d7c8f89ee82c6ed738fdbb",
+  "fdeeec5d00c45fa79cf369f2"
+],
+"price": 1128,
+"summary": "Tamisium aegre crinis aranea creator adimpleo vae tabula.",
+"description": "Cohaero tempus voro ara alias corona censura cur arx. Canis cubo vomito. Thorax cultellus illum sponte bene.\nThymum adsuesco celer triumphus id. Ocer decumbo delego comis subiungo stillicidium color corroboro urbanus tubineus. Utrum vulgivagus adeptio decretum perspiciatis aureus canis teres cresco.",
+"imageCover": "https://loremflickr.com/3860/3972?lock=5777193609788182",
+"locations": [
+  {
+    "_id": "1e6b1fbfc9dc7a0f3f8edcc1",
+    "description": "Konopelski, Weimann and Bogan",
+    "type": "Point",
+    "coordinates": [
+      -167.8401,
+      -30.1154
+    ],
+    "day": 1
+  },
+  {
+    "_id": "6ffaedcdacf0fc9b4f6facab",
+    "description": "Simonis - McDermott",
+    "type": "Point",
+    "coordinates": [
+      -24.0268,
+      67.2871
+    ],
+    "day": 3
+  },
+  {
+    "_id": "7e3ba372c9adb5de3b11ff66",
+    "description": "Leffler, Bashirian and Willms",
+    "type": "Point",
+    "coordinates": [
+      -160.7305,
+      38.0409
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Joesphfurt, Malta",
+  "type": "Point",
+  "coordinates": [
+    -116.6106,
+    -22.7318
+  ],
+  "address": "58429 Nikolas Light"
+},
+"ratingsAverage": 4.5,
+"ratingsQuantity": 60,
+"images": [
+  "https://picsum.photos/seed/zztoGx/2107/683",
+  "https://picsum.photos/seed/MdtZG2rV8/985/3155",
+  "https://loremflickr.com/2192/3596?lock=7465249228389966"
+],
+"startDates": [
+  "2025-05-09T15:47:50.962Z",
+  "2025-03-11T14:54:06.094Z",
+  "2024-10-01T23:42:37.901Z"
+],
+"_id": "f4a8b7e14d5c6c79d760a8cf",
+"name": "Handcrafted Cotton Keyboard",
+"duration": 2,
+"maxGroupSize": 18,
+"difficulty": "difficult",
+"guides": [
+  "a48e86d7beab3bb1a9d60848",
+  "0feff4e918c9f8bfbabfffba"
+],
+"price": 2892,
+"summary": "Unus assumenda decor aggero coniuratio commodi strues.",
+"description": "Laborum cerno tenetur expedita aedificium totidem voluptatem usque celebrer. Subnecto decumbo pectus acervus suspendo pauper claro. Tempora textus atque pariatur vilis uterque damnatio deleo deleo.\nQuaerat tres ipsam doloribus ubi molestiae caries. Sortitus demulceo terra summa agnitio. Sollicito utroque desipio.",
+"imageCover": "https://picsum.photos/seed/Z7CSsW/2196/804",
+"locations": [
+  {
+    "_id": "bfbe1edcef34fa4a4a4fdea0",
+    "description": "Brakus, Nolan and Metz",
+    "type": "Point",
+    "coordinates": [
+      168.773,
+      15.7666
+    ],
+    "day": 1
+  },
+  {
+    "_id": "1adde7ab499e56c05db8c638",
+    "description": "Wunsch, Luettgen and Reichert",
+    "type": "Point",
+    "coordinates": [
+      83.4713,
+      41.1302
+    ],
+    "day": 3
+  },
+  {
+    "_id": "e3f8c65dcdfeea852f58bbdd",
+    "description": "Kessler - Prohaska",
+    "type": "Point",
+    "coordinates": [
+      72.186,
+      -39.6617
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Hesterport, Svalbard & Jan Mayen Islands",
+  "type": "Point",
+  "coordinates": [
+    -88.7591,
+    57.8299
+  ],
+  "address": "239 Candelario Mall"
+},
+"ratingsAverage": 3.5,
+"ratingsQuantity": 62,
+"images": [
+  "https://picsum.photos/seed/P5eb621i/1872/1274",
+  "https://picsum.photos/seed/bblpVEEL1o/1925/2756",
+  "https://loremflickr.com/698/3475?lock=3555590378469489"
+],
+"startDates": [
+  "2024-07-08T10:39:23.762Z",
+  "2025-06-21T03:02:51.197Z",
+  "2024-09-09T21:50:17.017Z"
+],
+"_id": "8d44bdbb2a4ceb6d1c5bbcfd",
+"name": "Refined Bronze Bacon",
+"duration": 10,
+"maxGroupSize": 14,
+"difficulty": "easy",
+"guides": [
+  "53a4eccc21cfb9e7ebccaea6",
+  "7bbdc0b5c9dae72ba3dfbbc3"
+],
+"price": 1390,
+"summary": "Usque virtus vapulus cometes clam itaque viriliter vesper.",
+"description": "Animi comburo aliquid desolo unde delectus quia suffragium. Delicate asporto velit rerum. Avarus tollo vulpes argentum laboriosam.\nPel thorax aggero deporto utpote vigilo vir turba curo baiulus. Creta curis tredecim audentia sollicito acquiro dens repellat harum. Aiunt aduro tendo conspergo apud aestas alius bellum.",
+"imageCover": "https://picsum.photos/seed/3ap2IwM/1932/1826",
+"locations": [
+  {
+    "_id": "dc5b8b14cd36ac4f00ee0f37",
+    "description": "Bergnaum, Berge and Romaguera",
+    "type": "Point",
+    "coordinates": [
+      26.7184,
+      -59.2015
+    ],
+    "day": 1
+  },
+  {
+    "_id": "bc53a558b0b0f2c9cd5eb7d3",
+    "description": "Hermann - Sporer",
+    "type": "Point",
+    "coordinates": [
+      31.3572,
+      62.1201
+    ],
+    "day": 3
+  },
+  {
+    "_id": "cdbbab9ff9ae4fabdbe8b7b3",
+    "description": "Hermiston - Grant",
+    "type": "Point",
+    "coordinates": [
+      139.9578,
+      -89.4
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Colinboro, Rwanda",
+  "type": "Point",
+  "coordinates": [
+    145.5083,
+    -82.5582
+  ],
+  "address": "8632 Eleanora Views"
+},
+"ratingsAverage": 4.2,
+"ratingsQuantity": 20,
+"images": [
+  "https://loremflickr.com/2781/3635?lock=8926748084049185",
+  "https://loremflickr.com/2264/871?lock=3674263306427209",
+  "https://loremflickr.com/2603/544?lock=7978148777306193"
+],
+"startDates": [
+  "2024-11-10T20:03:18.030Z",
+  "2024-12-04T21:42:59.372Z",
+  "2025-04-15T19:30:10.605Z"
+],
+"_id": "85cddecb5ad2d4e5fb59f3ac",
+"name": "Unbranded Plastic Soap",
+"duration": 2,
+"maxGroupSize": 8,
+"difficulty": "easy",
+"guides": [
+  "825ea3bbaf2f46be0436bc1f",
+  "b5a71adfd32bbeb9c9c25d4d"
+],
+"price": 1724,
+"summary": "Attonbitus conculco dapifer.",
+"description": "Comedo amitto in stella audio exercitationem. Absconditus accommodo comparo videlicet curia. Autem acervus urbanus uredo libero adflicto viriliter.\nAtavus vapulus tumultus defero peccatus crastinus. Spargo culpo debeo crux mollitia quasi tunc harum neque comprehendo. Mollitia tot adficio clarus tenuis.",
+"imageCover": "https://picsum.photos/seed/LGr5gnzpnV/140/641",
+"locations": [
+  {
+    "_id": "5ea52a31f79e2efe55c7ae92",
+    "description": "Nolan Inc",
+    "type": "Point",
+    "coordinates": [
+      152.2081,
+      39.212
+    ],
+    "day": 1
+  },
+  {
+    "_id": "dc3d7bbebadb03471d4fe00b",
+    "description": "Langosh - Durgan",
+    "type": "Point",
+    "coordinates": [
+      99.6495,
+      -38.4566
+    ],
+    "day": 3
+  },
+  {
+    "_id": "2e2c116ebbb17a9cc6ce1ad1",
+    "description": "McGlynn - Goodwin",
+    "type": "Point",
+    "coordinates": [
+      48.3815,
+      11.8428
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Sheboygan, Colombia",
+  "type": "Point",
+  "coordinates": [
+    -9.7956,
+    -37.1152
+  ],
+  "address": "6099 Prospect Road"
+},
+"ratingsAverage": 5,
+"ratingsQuantity": 51,
+"images": [
+  "https://loremflickr.com/2090/81?lock=4421878096269896",
+  "https://loremflickr.com/1056/2974?lock=7576938002513002",
+  "https://loremflickr.com/1297/3633?lock=1241487144778088"
+],
+"startDates": [
+  "2025-05-08T12:42:33.162Z",
+  "2024-01-10T15:18:39.106Z",
+  "2024-06-03T10:49:47.992Z"
+],
+"_id": "0ce8d8fea6cbd1eec6ade4e2",
+"name": "Sleek Wooden Chicken",
+"duration": 5,
+"maxGroupSize": 13,
+"difficulty": "easy",
+"guides": [
+  "e185e4bb0de19cfa4efabacf",
+  "c38abadea8c5a21baee1aadc"
+],
+"price": 2466,
+"summary": "Summa labore vicinus vero pauper amicitia tolero.",
+"description": "Sub deludo pax. Vilis turbo cupiditate demulceo laborum sursum abscido. Confugo vulgo brevis tredecim aliqua ars testimonium ullam.\nVoco undique auctus crustulum verumtamen porro non claudeo cetera. Stipes demitto thorax tibi cohaero angulus eligendi defungo cariosus. Aliquam veritas perferendis caveo brevis.",
+"imageCover": "https://loremflickr.com/412/821?lock=4805167400160547",
+"locations": [
+  {
+    "_id": "10c8ebe2d5258019a52de5dc",
+    "description": "Koss, Skiles and Hirthe",
+    "type": "Point",
+    "coordinates": [
+      117.9122,
+      71.6544
+    ],
+    "day": 1
+  },
+  {
+    "_id": "3bb545ff20e4a3d66ebebe7c",
+    "description": "Hettinger, Homenick and Lindgren",
+    "type": "Point",
+    "coordinates": [
+      -86.0025,
+      -7.3707
+    ],
+    "day": 3
+  },
+  {
+    "_id": "cecd1e24efc4cfbb8df7d5d0",
+    "description": "Lueilwitz Inc",
+    "type": "Point",
+    "coordinates": [
+      -41.6806,
+      -77.6656
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "West Cadeside, Falkland Islands (Malvinas)",
+  "type": "Point",
+  "coordinates": [
+    118.1115,
+    46.8752
+  ],
+  "address": "89528 Rylan Street"
+},
+"ratingsAverage": 5,
+"ratingsQuantity": 88,
+"images": [
+  "https://loremflickr.com/2025/2271?lock=4295423282718262",
+  "https://loremflickr.com/1579/2308?lock=3689595969051575",
+  "https://picsum.photos/seed/UbauTN6/3254/729"
+],
+"startDates": [
+  "2024-12-04T00:56:05.471Z",
+  "2024-12-14T09:27:30.184Z",
+  "2024-12-23T15:12:13.190Z"
+],
+"_id": "a0eccc328be8dec32aaba86a",
+"name": "Handmade Steel Chips",
+"duration": 1,
+"maxGroupSize": 13,
+"difficulty": "difficult",
+"guides": [
+  "c8dd3f30a7ea09559edfcccd",
+  "b4796fbaf4bd2f299e9c6f9a"
+],
+"price": 2424,
+"summary": "Ex timor utilis tenetur nostrum nostrum soleo spiculum custodia.",
+"description": "Annus aduro in. Caput nobis derideo decerno. Ustulo vorago turbo contabesco concedo strenuus depereo.\nPariatur bibo inventore super alo. Crinis dolor vomer cupressus thesaurus curatio vinum ullam. Accendo comparo eius aperiam.",
+"imageCover": "https://picsum.photos/seed/EiDP3Vrv8o/1693/3707",
+"locations": [
+  {
+    "_id": "a13a9f9dbddd1d7233547e51",
+    "description": "Shanahan, Graham and Hills",
+    "type": "Point",
+    "coordinates": [
+      78.6416,
+      30.1315
+    ],
+    "day": 1
+  },
+  {
+    "_id": "31ab91177883891b47bd2bd5",
+    "description": "Daugherty - Predovic",
+    "type": "Point",
+    "coordinates": [
+      4.1138,
+      87.575
+    ],
+    "day": 3
+  },
+  {
+    "_id": "b6fe38bcfb8003b8ffd14c00",
+    "description": "McCullough, Kshlerin and Hodkiewicz",
+    "type": "Point",
+    "coordinates": [
+      96.5158,
+      44.5139
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Christianshire, United States Minor Outlying Islands",
+  "type": "Point",
+  "coordinates": [
+    10.075,
+    -52.8807
+  ],
+  "address": "391 Willow Grove"
+},
+"ratingsAverage": 3.5,
+"ratingsQuantity": 6,
+"images": [
+  "https://loremflickr.com/3927/1084?lock=8214194543040821",
+  "https://loremflickr.com/1475/3463?lock=418409789820014",
+  "https://picsum.photos/seed/HIRGgY7ax/100/949"
+],
+"startDates": [
+  "2024-12-31T06:00:18.336Z",
+  "2025-05-13T20:47:48.538Z",
+  "2025-03-29T00:52:56.341Z"
+],
+"_id": "fff748f86e2c93dae37dcd1e",
+"name": "Sleek Fresh Chicken",
+"duration": 2,
+"maxGroupSize": 18,
+"difficulty": "difficult",
+"guides": [
+  "5f2ee6f198dae5d871f56431",
+  "6052ebac922a23cef8b5be44"
+],
+"price": 542,
+"summary": "Theca iure cultellus tener ipsa vester dicta desino speciosus.",
+"description": "Color averto illo tonsor adstringo est. Vulnero porro labore alo illo trucido ulterius argentum cena degero. Iusto illo subnecto.\nSol optio umquam adfectus aptus cohaero tunc tergeo terga. Sint patruus necessitatibus nam vorax sonitus creber absorbeo suadeo. Statim quo pax centum alias.",
+"imageCover": "https://loremflickr.com/2781/283?lock=3470626487048751",
+"locations": [
+  {
+    "_id": "c66841e68f2fbab57cbc4d2d",
+    "description": "Cruickshank LLC",
+    "type": "Point",
+    "coordinates": [
+      -151.0525,
+      40.8363
+    ],
+    "day": 1
+  },
+  {
+    "_id": "1bae10230acd08fbe56cdf8d",
+    "description": "Mayer and Sons",
+    "type": "Point",
+    "coordinates": [
+      -179.3107,
+      -11.8286
+    ],
+    "day": 3
+  },
+  {
+    "_id": "6e9fed6aa1afab7ed48c211a",
+    "description": "Hermiston LLC",
+    "type": "Point",
+    "coordinates": [
+      -23.06,
+      81.6707
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Lake Janet, Saudi Arabia",
+  "type": "Point",
+  "coordinates": [
+    21.4986,
+    5.1301
+  ],
+  "address": "8691 Olin Mission"
+},
+"ratingsAverage": 3.7,
+"ratingsQuantity": 71,
+"images": [
+  "https://picsum.photos/seed/0Anfxlz8Gj/147/995",
+  "https://loremflickr.com/1166/339?lock=4109726493873985",
+  "https://loremflickr.com/328/2518?lock=4052170168767242"
+],
+"startDates": [
+  "2024-02-24T20:28:36.645Z",
+  "2024-03-20T04:06:18.128Z",
+  "2024-12-21T01:58:26.257Z"
+],
+"_id": "da11223ee56c9cdc0ff4f3a5",
+"name": "Electronic Bronze Tuna",
+"duration": 1,
+"maxGroupSize": 10,
+"difficulty": "difficult",
+"guides": [
+  "ff0e2fe9c7d6985cdb2bffc9",
+  "bfeaf7f5ae6bd7e9f3dadb70"
+],
+"price": 1286,
+"summary": "Thema dolor color vinitor.",
+"description": "Facere concido voluntarius atavus damno. Desino eos calco colligo adulatio tutamen amita. Adsum stips voluptatum teneo ad artificiose iusto suspendo vel.\nEveniet celer coniuratio ancilla tumultus eius stipes abundans abstergo. Consectetur eum studio solvo vis appositus amor comptus. Toties adversus stillicidium solus adflicto vetus desidero deludo ocer agnitio.",
+"imageCover": "https://loremflickr.com/1338/3836?lock=5263187517349278",
+"locations": [
+  {
+    "_id": "efd1723fecd24f6ab89e904f",
+    "description": "Douglas - Cormier",
+    "type": "Point",
+    "coordinates": [
+      76.7891,
+      -87.9725
+    ],
+    "day": 1
+  },
+  {
+    "_id": "5feebd7d2d60c0cbf797142f",
+    "description": "Hane, Bednar and Renner",
+    "type": "Point",
+    "coordinates": [
+      -5.3067,
+      83.5309
+    ],
+    "day": 3
+  },
+  {
+    "_id": "b68ccf56496533f3cbea3751",
+    "description": "Brown - Howe",
+    "type": "Point",
+    "coordinates": [
+      -159.9006,
+      -32.2561
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Osinskiburgh, Burkina Faso",
+  "type": "Point",
+  "coordinates": [
+    70.8052,
+    -40.9246
+  ],
+  "address": "468 Stacey Square"
+},
+"ratingsAverage": 3.7,
+"ratingsQuantity": 78,
+"images": [
+  "https://picsum.photos/seed/8ysCz8vUwN/81/2372",
+  "https://loremflickr.com/2539/1131?lock=2592261050159231",
+  "https://picsum.photos/seed/UEu5Wi6/1949/1973"
+],
+"startDates": [
+  "2025-08-16T22:32:39.807Z",
+  "2024-03-31T22:50:42.782Z",
+  "2024-04-14T17:10:39.301Z"
+],
+"_id": "91d20eeb4e5cc04fa0235be9",
+"name": "Ergonomic Bronze Salad",
+"duration": 9,
+"maxGroupSize": 12,
+"difficulty": "medium",
+"guides": [
+  "982808ba29e1dd61a5dde867",
+  "7ab137a6e57ddd43d8be9cce"
+],
+"price": 1763,
+"summary": "Thesis totidem conturbo censura suscipit utroque derelinquo crepusculum virga tricesimus.",
+"description": "Verbera assentator aestivus nobis cruciamentum vociferor aestivus decor cogo. Agnosco id caput atrocitas cruciamentum unde. Sordeo deprecator usitas crinis succedo damnatio acies aegrus.\nArbustum corporis vitiosus laudantium. Laudantium apto auditor solum aestus aurum adulatio. Perferendis clementia aperte.",
+"imageCover": "https://picsum.photos/seed/ymlEYC/1915/2375",
+"locations": [
+  {
+    "_id": "5ac49fd5f2f9dc31c6cf1c0f",
+    "description": "Gulgowski, Barrows and Stokes",
+    "type": "Point",
+    "coordinates": [
+      93.8761,
+      1.344
+    ],
+    "day": 1
+  },
+  {
+    "_id": "ca7db3cd8ccc9c9cc6a8509d",
+    "description": "Hirthe - Hirthe",
+    "type": "Point",
+    "coordinates": [
+      95.1011,
+      2.2811
+    ],
+    "day": 3
+  },
+  {
+    "_id": "ff399b85bccb9e40701d7bec",
+    "description": "Bahringer Inc",
+    "type": "Point",
+    "coordinates": [
+      -11.1889,
+      -68.0895
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Fort Macy, Sao Tome and Principe",
+  "type": "Point",
+  "coordinates": [
+    50.1683,
+    -13.6558
+  ],
+  "address": "469 Meadow View"
+},
+"ratingsAverage": 4.7,
+"ratingsQuantity": 92,
+"images": [
+  "https://picsum.photos/seed/NdrRWFtyMu/468/1973",
+  "https://picsum.photos/seed/PytKigjs/1776/3955",
+  "https://picsum.photos/seed/GlZNPKzRxs/3515/1310"
+],
+"startDates": [
+  "2025-08-12T11:13:36.947Z",
+  "2024-05-16T17:27:37.505Z",
+  "2025-03-04T11:22:27.339Z"
+],
+"_id": "3d4b142b9840baf8ed9aaeba",
+"name": "Handmade Wooden Bike",
+"duration": 6,
+"maxGroupSize": 15,
+"difficulty": "easy",
+"guides": [
+  "55fe5dbfdcb6e52a5be0cda4",
+  "b62bcfc02ddbd4110c877bc1"
+],
+"price": 1080,
+"summary": "Asporto theologus arto ars amita aperiam verumtamen crudelis.",
+"description": "Magni calamitas aperte deripio correptius volo quas vicissitudo tersus depulso. Stips stips cumque tutis vacuus ambitus caterva cruentus aggredior candidus. Supra cena cedo.\nQuam molestiae bis tyrannus alter aurum varius totus. Fuga cena volva. Capitulus asporto umquam arcus aggero defetiscor solutio vilis.",
+"imageCover": "https://loremflickr.com/2111/1556?lock=695424474919592",
+"locations": [
+  {
+    "_id": "45d7d7aba436f32aa4ec4c7c",
+    "description": "Schmidt - Daugherty",
+    "type": "Point",
+    "coordinates": [
+      89.7227,
+      52.1415
+    ],
+    "day": 1
+  },
+  {
+    "_id": "de1cd65d8729cc511feb52be",
+    "description": "McGlynn - Jakubowski",
+    "type": "Point",
+    "coordinates": [
+      88.2201,
+      -84.4872
+    ],
+    "day": 3
+  },
+  {
+    "_id": "dcafa2bb1e22dd5073babbf9",
+    "description": "Schmeler LLC",
+    "type": "Point",
+    "coordinates": [
+      -125.837,
+      -0.7307
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Candiceport, Cayman Islands",
+  "type": "Point",
+  "coordinates": [
+    -88.8331,
+    41.1754
+  ],
+  "address": "349 Rosenbaum Knoll"
+},
+"ratingsAverage": 3.7,
+"ratingsQuantity": 49,
+"images": [
+  "https://loremflickr.com/2447/1029?lock=4381428436665592",
+  "https://loremflickr.com/3654/2046?lock=856117180589348",
+  "https://picsum.photos/seed/lihLqqnD/1652/3845"
+],
+"startDates": [
+  "2025-03-26T05:12:01.542Z",
+  "2024-05-24T10:30:30.673Z",
+  "2024-10-07T02:34:58.457Z"
+],
+"_id": "c73be8e6a00b511c8ea2feb1",
+"name": "Fantastic Metal Computer",
+"duration": 10,
+"maxGroupSize": 16,
+"difficulty": "easy",
+"guides": [
+  "cb600e9c4bcf605980aedf89",
+  "f45ee8ad7c4efbdf2eeaac5f"
+],
+"price": 1496,
+"summary": "Caput minus somniculosus summa recusandae.",
+"description": "Vinum est vox bardus. Cubitum cauda aggero adhuc decumbo defero sumo est. Arguo carbo textor venustas quo thymbra templum accusantium vilitas absconditus.\nArcesso angelus viscus conatus cum tergeo. Trucido audax capillus. Summisse amo curis demitto certe aegre degero cinis vester.",
+"imageCover": "https://loremflickr.com/1997/1973?lock=4754930319834291",
+"locations": [
+  {
+    "_id": "6bd27e33d658bbbeb2e9e0c0",
+    "description": "Durgan - Mohr",
+    "type": "Point",
+    "coordinates": [
+      -148.5414,
+      -30.6025
+    ],
+    "day": 1
+  },
+  {
+    "_id": "64ef83bbb5e52fb59bdbfa6f",
+    "description": "Hodkiewicz Group",
+    "type": "Point",
+    "coordinates": [
+      85.1768,
+      -11.0064
+    ],
+    "day": 3
+  },
+  {
+    "_id": "6f3e36fefced3c6d38e44534",
+    "description": "Luettgen - Bruen",
+    "type": "Point",
+    "coordinates": [
+      -132.3008,
+      -67.8911
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "Antioch, Djibouti",
+  "type": "Point",
+  "coordinates": [
+    86.8937,
+    39.4386
+  ],
+  "address": "819 Emmerich Shores"
+},
+"ratingsAverage": 4.7,
+"ratingsQuantity": 100,
+"images": [
+  "https://picsum.photos/seed/DJf9l/1774/3849",
+  "https://loremflickr.com/2358/3087?lock=54121080479621",
+  "https://loremflickr.com/1155/778?lock=922412249932850"
+],
+"startDates": [
+  "2024-01-06T03:46:53.365Z",
+  "2024-04-26T00:43:06.230Z",
+  "2024-01-22T09:55:19.197Z"
+],
+"_id": "07a2e51db4ba9b9bfaaff49c",
+"name": "Ergonomic Steel Shirt",
+"duration": 10,
+"maxGroupSize": 17,
+"difficulty": "easy",
+"guides": [
+  "63a277ddf7c8ddcf8a8cc4df",
+  "62daecedfa3da7dec4caf0dc"
+],
+"price": 733,
+"summary": "Vitae volaticus comes valeo ars cubitum anser comedo trepide valens.",
+"description": "Sum canonicus beneficium quod vicissitudo ademptio sperno inventore defetiscor. Corporis umbra absque et cur ducimus trepide spectaculum ancilla. Avarus celebrer nam cometes sub vitium statim.\nDelectus cruentus acidus delectus creber solium vox velit. Communis sol cado ulterius cattus solio voluptatum. Subito usque iste adstringo conatus.",
+"imageCover": "https://loremflickr.com/1016/2081?lock=6713186109140241",
+"locations": [
+  {
+    "_id": "939f73035eec6f2398feddba",
+    "description": "Gleichner LLC",
+    "type": "Point",
+    "coordinates": [
+      138.4797,
+      -35.6898
+    ],
+    "day": 1
+  },
+  {
+    "_id": "29974be8fd5d7e230aef89bd",
+    "description": "Feil and Sons",
+    "type": "Point",
+    "coordinates": [
+      -172.6344,
+      66.2609
+    ],
+    "day": 3
+  },
+  {
+    "_id": "ac0beba3525c8f2cd35fb5ef",
+    "description": "Sauer, Rowe and Kozey",
+    "type": "Point",
+    "coordinates": [
+      -0.5154,
+      -76.7226
+    ],
+    "day": 5
+  }
+]
+},
+{
+"startLocation": {
+  "description": "West Patsy, Israel",
+  "type": "Point",
+  "coordinates": [
+    -64.1012,
+    -23.4816
+  ],
+  "address": "5190 Heath Road"
+},
+"ratingsAverage": 5,
+"ratingsQuantity": 72,
+"images": [
+  "https://loremflickr.com/2573/409?lock=1521981134722001",
+  "https://loremflickr.com/988/3663?lock=1101679392644341",
+  "https://loremflickr.com/951/3556?lock=5200183275497500"
+],
+"startDates": [
+  "2024-02-09T00:34:45.875Z",
+  "2023-10-31T09:59:14.573Z",
+  "2024-02-09T19:57:46.437Z"
+],
+"_id": "bbfe8df3c8df82950d7a6e71",
+"name": "Unbranded Soft Pizza",
+"duration": 1,
+"maxGroupSize": 18,
+"difficulty": "easy",
+"guides": [
+  "ca77dbac5d4db89168edc92f",
+  "4a5a9ab2a2ff0509a0021cc2"
+],
+"price": 748,
+"summary": "Occaecati terebro adstringo subseco acervus quod vulgo bos surgo sortitus.",
+"description": "Creta decumbo cribro thema vomito vix aggero amor. Succurro abundans comprehendo color appono non architecto cumque. Universe denego reprehenderit congregatio cruentus benigne.\nUberrime cado aptus comes. Casus amplus auctor coepi stipes infit socius aestas illum magnam. Tenus aranea aliquid pecus absque ducimus ultio.",
+"imageCover": "https://picsum.photos/seed/o33lbk6dO/2066/837",
+"locations": [
+  {
+    "_id": "9613bc0cc9376fe8b6a2ebed",
+    "description": "Reinger Inc",
+    "type": "Point",
+    "coordinates": [
+      22.2504,
+      25.8554
+    ],
+    "day": 1
+  },
+  {
+    "_id": "bd2c2a3a7bdaa459e2d3f44c",
+    "description": "Mills - Sanford",
+    "type": "Point",
+    "coordinates": [
+      53.4278,
+      -29.3518
+    ],
+    "day": 3
+  },
+  {
+    "_id": "1b6fd0edad7fcf0f3aadedd2",
+    "description": "Ortiz Group",
+    "type": "Point",
+    "coordinates": [
+      -62.1188,
+      -40.8615
+    ],
+    "day": 5
+  }
+]
+}
+]
