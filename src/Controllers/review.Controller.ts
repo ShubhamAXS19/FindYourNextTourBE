@@ -8,15 +8,19 @@ import {
   deleteOne,
 } from "./handlerFactory";
 
-exports.setTourUserIds = (req: Request, res: Response, next: NextFunction) => {
+export const setTourUserIds = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   // Allow nested routes
   if (!req.body.tour) req.body.tour = req.params.tourId;
   if (!req.body.user) req.body.user = req.user.id;
   next();
 };
 
-exports.getAllReviews = getAll(ReviewModel);
-exports.getReview = getOne(ReviewModel);
-exports.createReview = createOne(ReviewModel);
-exports.updateReview = updateOne(ReviewModel);
-exports.deleteReview = deleteOne(ReviewModel);
+export const getAllReviews = getAll(ReviewModel);
+export const getReview = getOne(ReviewModel);
+export const createReview = createOne(ReviewModel);
+export const updateReview = updateOne(ReviewModel);
+export const deleteReview = deleteOne(ReviewModel);

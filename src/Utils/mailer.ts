@@ -26,6 +26,7 @@ function validateAwsCredentials() {
   // Log partial key for verification (security-conscious logging)
   console.log("AWS Configuration:");
   console.log(`Access Key ID: ${process.env.AWS_ACCESS_KEY_ID}`);
+  console.log(`Access Key ID: ${process.env.AWS_SECRET_ACCESS_KEY}`);
   console.log(`Region: ${process.env.AWS_REGION}`);
   console.log(`From Email: ${process.env.SES_FROM_EMAIL}`);
 }
@@ -37,7 +38,6 @@ const ses = new SESClient({
     accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
   },
-  apiVersion: "2010-12-01", // Optional but recommended
 });
 
 interface EmailPayload {
@@ -118,7 +118,9 @@ const testSESConnection = async () => {
 
     // Create the ListIdentitiesCommand (from AWS SDK v3) and send the command using sesClient
     const command = new ListIdentitiesCommand({});
-    const response = await ses.send(command); // sesClient should be initialized earlier in your code
+    console.log(command);
+    const response = await ses.send(command);
+    console.log(response); // sesClient should be initialized earlier in your code
 
     console.log(
       "SES Connection successful. Verified identities:",

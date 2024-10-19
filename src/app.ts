@@ -4,11 +4,10 @@ import mongoose from "mongoose";
 import cors from "cors";
 import tourRouter from "./Routes/tour.Route";
 import userRouter from "./Routes/user.Route";
-// import reviewRouter from "./Routes/review.Route";
+import reviewRouter from "./Routes/review.Route";
 import bookingRouter from "./Routes/booking.Route";
 // import viewRouter from "./Routes/view.Route";
 import AWSrouter from "./Routes/testAWS";
-import bodyParser from "body-parser";
 
 // Initialize Express app
 const app = express();
@@ -53,7 +52,7 @@ app.use(express.json());
 app.use("/", AWSrouter);
 app.use("/api/v1/tours", tourRouter);
 app.use("/api/v1/users", userRouter);
-// app.use("/api/v1/reviews", reviewRouter);
+app.use("/api/v1/reviews", reviewRouter);
 app.use("/api/v1/bookings", bookingRouter);
 
 // Global error handling for uncaught exceptions

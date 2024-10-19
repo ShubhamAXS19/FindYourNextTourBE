@@ -82,6 +82,9 @@ export class User {
 
   // Methods
   public async correctPassword(candidatePassword: string): Promise<boolean> {
+    if (!candidatePassword || !this.password) {
+      return false;
+    }
     return await bcrypt.compare(candidatePassword, this.password);
   }
 

@@ -466,5 +466,178 @@
         "day": 5
       }
     ]
+  },{
+    "startLocation": {
+      "description": "Phoenix, USA",
+      "type": "Point",
+      "coordinates": [-112.074036, 33.448376],
+      "address": "200 E Washington St, Phoenix, AZ 85004, USA"
+    },
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 12,
+    "images": ["tour-7-1.jpg", "tour-7-2.jpg", "tour-7-3.jpg"],
+    "startDates": [
+      "2021-09-15T08:00:00.000Z",
+      "2021-10-10T08:00:00.000Z",
+      "2021-11-01T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2970",
+    "name": "The Canyon Explorer",
+    "duration": 5,
+    "maxGroupSize": 12,
+    "difficulty": "medium",
+    "guides": ["5c8a23412f8fb814b56fa18c", "5c8a21d02f8fb814b56fa189"],
+    "price": 649,
+    "summary": "A breathtaking journey through the Grand Canyon's most iconic spots",
+    "description": "This tour takes you through some of the most scenic locations in the Grand Canyon, with challenging yet rewarding hikes, beautiful viewpoints, and expert guides to lead the way.",
+    "imageCover": "tour-7-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2971",
+        "description": "Grand Canyon South Rim",
+        "type": "Point",
+        "coordinates": [-112.114844, 36.106965],
+        "day": 1
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2972",
+        "description": "Havasu Falls",
+        "type": "Point",
+        "coordinates": [-113.245962, 36.255646],
+        "day": 3
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2973",
+        "description": "Colorado River Rafting",
+        "type": "Point",
+        "coordinates": [-113.225301, 36.112561],
+        "day": 4
+      }
+    ]
+  },{
+    "startLocation": {
+      "description": "Marrakech, Morocco",
+      "type": "Point",
+      "coordinates": [-8.008889, 31.629472],
+      "address": "Rue El Ksour, Marrakech 40000, Morocco"
+    },
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 15,
+    "images": ["tour-8-1.jpg", "tour-8-2.jpg", "tour-8-3.jpg"],
+    "startDates": [
+      "2021-10-22T08:00:00.000Z",
+      "2022-01-15T08:00:00.000Z",
+      "2022-03-10T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2974",
+    "name": "The Desert Trekker",
+    "duration": 6,
+    "maxGroupSize": 10,
+    "difficulty": "difficult",
+    "guides": ["5c8a23412f8fb814b56fa18c", "5c8a21f22f8fb814b56fa18a"],
+    "price": 899,
+    "summary": "Experience the vast beauty of the Moroccan desert on foot and camel",
+    "description": "This unforgettable trek takes you through the dunes of the Sahara Desert, offering opportunities for sandboarding, camel rides, and star-gazing at night. A true adventurer's dream!",
+    "imageCover": "tour-8-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2975",
+        "description": "Erg Chebbi Dunes",
+        "type": "Point",
+        "coordinates": [-3.965905, 31.100028],
+        "day": 2
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2976",
+        "description": "Merzouga",
+        "type": "Point",
+        "coordinates": [-4.013935, 31.080825],
+        "day": 4
+      }
+    ]
+  },{
+    "startLocation": {
+      "description": "Longyearbyen, Norway",
+      "type": "Point",
+      "coordinates": [15.631188, 78.223172],
+      "address": "Vei 238, 9170 Longyearbyen, Norway"
+    },
+    "ratingsAverage": 5.0,
+    "ratingsQuantity": 8,
+    "images": ["tour-9-1.jpg", "tour-9-2.jpg", "tour-9-3.jpg"],
+    "startDates": [
+      "2022-01-05T10:00:00.000Z",
+      "2022-03-18T10:00:00.000Z",
+      "2022-05-20T10:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2977",
+    "name": "The Arctic Explorer",
+    "duration": 8,
+    "maxGroupSize": 6,
+    "difficulty": "difficult",
+    "guides": ["5c8a1f4e2f8fb814b56fa185", "5c8a21f22f8fb814b56fa18a"],
+    "price": 1299,
+    "summary": "Explore the stunning Arctic landscape with dog-sledding and glacier hiking",
+    "description": "Journey through the remote beauty of the Arctic, where you'll experience the thrill of dog-sledding, ice-caving, and hiking across vast glaciers. A once-in-a-lifetime adventure for thrill-seekers and nature lovers alike.",
+    "imageCover": "tour-9-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2978",
+        "description": "Nordenskiöld Glacier",
+        "type": "Point",
+        "coordinates": [16.642743, 78.702917],
+        "day": 2
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2979",
+        "description": "Dog-Sledding Expedition",
+        "type": "Point",
+        "coordinates": [15.722188, 78.232172],
+        "day": 4
+      }
+    ]
+  },{
+    "startLocation": {
+      "description": "Kathmandu, Nepal",
+      "type": "Point",
+      "coordinates": [85.3240, 27.7172],
+      "address": "Thamel, Kathmandu 44600, Nepal"
+    },
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 10,
+    "images": ["tour-10-1.jpg", "tour-10-2.jpg", "tour-10-3.jpg"],
+    "startDates": [
+      "2022-03-25T07:00:00.000Z",
+      "2022-05-10T07:00:00.000Z",
+      "2022-09-01T07:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2980",
+    "name": "The Mountain Conqueror",
+    "duration": 14,
+    "maxGroupSize": 15,
+    "difficulty": "difficult",
+    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a23412f8fb814b56fa18c"],
+    "price": 1999,
+    "summary": "Summit some of the world's highest peaks in the Himalayas",
+    "description": "A challenging trek through the Himalayas, designed for experienced adventurers. Enjoy stunning views, expert guidance, and a sense of accomplishment as you conquer some of the highest mountains on earth.",
+    "imageCover": "tour-10-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2981",
+        "description": "Everest Base Camp",
+        "type": "Point",
+        "coordinates": [86.865168, 27.987850],
+        "day": 6
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2982",
+        "description": "Kala Patthar",
+        "type": "Point",
+        "coordinates": [86.828992, 27.998007],
+        "day": 8
+      }
+    ]
   }
+    
+  
 ]

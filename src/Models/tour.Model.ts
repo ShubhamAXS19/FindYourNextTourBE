@@ -1,5 +1,5 @@
 import { getModelForClass, prop, Ref } from "@typegoose/typegoose";
-import { User } from "./user.model";
+import { User } from "./user.Model";
 
 export class Location {
   @prop({ required: true, default: "Point" })
@@ -84,7 +84,7 @@ export class Tour {
   @prop({ type: () => [Location], _id: false })
   locations?: Location[];
 
-  @prop({ ref: () => User })
+  @prop({ ref: () => "User" })
   guides!: Ref<User>[];
 
   // Define virtuals without conflicting with _id

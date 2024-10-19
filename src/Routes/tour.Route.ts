@@ -7,7 +7,7 @@ import {
   getToursWithin,
   getDistances,
   createTour,
-  getTour,
+  getTourByName,
   updateTour,
   deleteTour,
 } from "../Controllers/tour.Controller";
@@ -18,16 +18,16 @@ import {
   uploadTourImages,
   resizeTourImages,
 } from "../Controllers/auth.Controller";
-// import reviewRouter from "./review.Route";
+import reviewRouter from "./review.Route";
 
 const router = express.Router();
 
-// router.param('id', checkID);
+// router.param("id", checkID);
 
 // POST /tour/234fad4/reviews
 // GET /tour/234fad4/reviews
 
-// router.use("/:tourId/reviews", reviewRouter);
+router.use("/:tourId/reviews", reviewRouter);
 
 router.route("/top-5-cheap").get(aliasTopTours, getAllTours);
 
@@ -45,12 +45,12 @@ router.route("/distances/:latlng/unit/:unit").get(getDistances);
 
 router
   .route("/")
-  .get(getAllTours)
+  .get(getAllTours) //tested
   .post(protect, restrictTo("admin", "lead-guide"), createTour);
 
 router
   .route("/:id")
-  .get(getTour)
+  .get(getTourByName) // tested
   .patch(
     protect,
     restrictTo("admin", "lead-guide"),

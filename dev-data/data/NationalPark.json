@@ -1,0 +1,427 @@
+[
+    {
+        "startLocation": {
+          "description": "Yellowstone National Park, USA",
+          "type": "Point",
+          "coordinates": [-110.5885, 44.4280],
+          "address": "Yellowstone National Park, Wyoming, USA"
+        },
+        "ratingsAverage": 4.9,
+        "ratingsQuantity": 150,
+        "images": ["yellowstone-1.jpg", "yellowstone-2.jpg", "yellowstone-3.jpg"],
+        "startDates": [
+          "2022-06-01T08:00:00.000Z",
+          "2022-08-15T08:00:00.000Z",
+          "2022-10-05T08:00:00.000Z"
+        ],
+        "_id": "5c88fa8cf4afda39709c2983",
+        "name": "The Yellowstone Adventure",
+        "duration": 7,
+        "maxGroupSize": 20,
+        "difficulty": "medium",
+        "guides": ["5c8a23412f8fb814b56fa18c", "5c8a21d02f8fb814b56fa189"],
+        "price": 1200,
+        "summary": "Explore the geysers, wildlife, and stunning landscapes of Yellowstone",
+        "description": "This tour covers the iconic spots of Yellowstone, including Old Faithful, the Grand Prismatic Spring, and Yellowstone Lake, offering wildlife viewing and scenic beauty.",
+        "imageCover": "yellowstone-cover.jpg",
+        "locations": [
+          {
+            "_id": "5c88fa8cf4afda39709c2984",
+            "description": "Old Faithful",
+            "type": "Point",
+            "coordinates": [-110.8281, 44.4605],
+            "day": 2
+          },
+          {
+            "_id": "5c88fa8cf4afda39709c2985",
+            "description": "Grand Prismatic Spring",
+            "type": "Point",
+            "coordinates": [-110.8374, 44.5251],
+            "day": 4
+          }
+        ]
+      }
+,{
+    "startLocation": {
+      "description": "Banff National Park, Canada",
+      "type": "Point",
+      "coordinates": [-115.5708, 51.1784],
+      "address": "Banff National Park, Alberta, Canada"
+    },
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 120,
+    "images": ["banff-1.jpg", "banff-2.jpg", "banff-3.jpg"],
+    "startDates": [
+      "2022-07-01T08:00:00.000Z",
+      "2022-09-10T08:00:00.000Z",
+      "2022-11-15T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2986",
+    "name": "The Banff Wilderness Experience",
+    "duration": 10,
+    "maxGroupSize": 15,
+    "difficulty": "difficult",
+    "guides": ["5c8a23412f8fb814b56fa18c", "5c8a21d02f8fb814b56fa189"],
+    "price": 1600,
+    "summary": "Discover the rugged beauty of the Canadian Rockies",
+    "description": "A challenging trek through Banff National Park's stunning landscapes, from glacial lakes to mountain peaks, perfect for experienced adventurers.",
+    "imageCover": "banff-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2987",
+        "description": "Lake Louise",
+        "type": "Point",
+        "coordinates": [-116.2156, 51.4254],
+        "day": 3
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2988",
+        "description": "Moraine Lake",
+        "type": "Point",
+        "coordinates": [-116.1697, 51.3211],
+        "day": 5
+      }
+    ]
+  }
+,{
+    "startLocation": {
+      "description": "Uluru-Kata Tjuta National Park, Australia",
+      "type": "Point",
+      "coordinates": [131.0349, -25.3444],
+      "address": "Uluru-Kata Tjuta National Park, Northern Territory, Australia"
+    },
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 85,
+    "images": ["uluru-1.jpg", "uluru-2.jpg", "uluru-3.jpg"],
+    "startDates": [
+      "2022-04-20T08:00:00.000Z",
+      "2022-06-25T08:00:00.000Z",
+      "2022-09-05T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2989",
+    "name": "The Uluru Desert Expedition",
+    "duration": 5,
+    "maxGroupSize": 12,
+    "difficulty": "medium",
+    "guides": ["5c8a21f22f8fb814b56fa18a", "5c8a23412f8fb814b56fa18c"],
+    "price": 1300,
+    "summary": "Discover the ancient and sacred landscapes of Australia's Red Centre",
+    "description": "This tour provides an in-depth experience of Uluru and Kata Tjuta, exploring ancient rock formations, Aboriginal culture, and the stunning desert landscape.",
+    "imageCover": "uluru-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2990",
+        "description": "Uluru",
+        "type": "Point",
+        "coordinates": [131.0369, -25.3450],
+        "day": 2
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2991",
+        "description": "Kata Tjuta",
+        "type": "Point",
+        "coordinates": [130.7333, -25.2828],
+        "day": 4
+      }
+    ]
+  }
+,
+{
+    "startLocation": {
+      "description": "Fiordland National Park, New Zealand",
+      "type": "Point",
+      "coordinates": [167.9517, -45.4154],
+      "address": "Fiordland National Park, Southland, New Zealand"
+    },
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 95,
+    "images": ["fiordland-1.jpg", "fiordland-2.jpg", "fiordland-3.jpg"],
+    "startDates": [
+      "2022-03-15T08:00:00.000Z",
+      "2022-06-01T08:00:00.000Z",
+      "2022-09-10T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2992",
+    "name": "The Fiordland Experience",
+    "duration": 8,
+    "maxGroupSize": 18,
+    "difficulty": "medium",
+    "guides": ["5c8a23412f8fb814b56fa18c", "5c8a21f22f8fb814b56fa18a"],
+    "price": 1450,
+    "summary": "Explore the rugged beauty of New Zealand's largest national park",
+    "description": "An immersive journey through Fiordland's waterfalls, fjords, and rainforests, including visits to Milford Sound and Doubtful Sound.",
+    "imageCover": "fiordland-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2993",
+        "description": "Milford Sound",
+        "type": "Point",
+        "coordinates": [167.9481, -44.6719],
+        "day": 3
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2994",
+        "description": "Doubtful Sound",
+        "type": "Point",
+        "coordinates": [167.5327, -45.2971],
+        "day": 6
+      }
+    ]
+  }
+,{
+    "startLocation": {
+      "description": "Lake District National Park, England",
+      "type": "Point",
+      "coordinates": [-3.0886, 54.4609],
+      "address": "Lake District National Park, Cumbria, England"
+    },
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 70,
+    "images": ["lake-district-1.jpg", "lake-district-2.jpg", "lake-district-3.jpg"],
+    "startDates": [
+      "2022-05-01T08:00:00.000Z",
+      "2022-07-20T08:00:00.000Z",
+      "2022-09-30T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2995",
+    "name": "The Lake District Ramble",
+    "duration": 6,
+    "maxGroupSize": 14,
+    "difficulty": "easy",
+    "guides": ["5c8a21f22f8fb814b56fa18a", "5c8a23412f8fb814b56fa18c"],
+    "price": 1100,
+    "summary": "A serene walking tour through the picturesque landscapes of the Lake District",
+    "description": "Discover the charm of the Lake District with easy hikes, beautiful lakes, and quaint villages in one of England's most beloved national parks.",
+    "imageCover": "lake-district-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2996",
+        "description": "Windermere Lake",
+        "type": "Point",
+        "coordinates": [-2.9226, 54.3797],
+        "day": 2
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2997",
+        "description": "Scafell Pike",
+        "type": "Point",
+        "coordinates": [-3.2110, 54.4543],
+        "day": 4
+      }
+    ]
+  }
+,{
+    "startLocation": {
+      "description": "Swiss National Park, Switzerland",
+      "type": "Point",
+      "coordinates": [10.2247, 46.6573],
+      "address": "Swiss National Park, Zernez, Graubünden, Switzerland"
+    },
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 80,
+    "images": ["swiss-park-1.jpg", "swiss-park-2.jpg", "swiss-park-3.jpg"],
+    "startDates": [
+      "2022-06-10T08:00:00.000Z",
+      "2022-08-20T08:00:00.000Z",
+      "2022-10-15T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2998",
+    "name": "The Swiss Alpine Adventure",
+    "duration": 7,
+    "maxGroupSize": 12,
+    "difficulty": "medium",
+    "guides": ["5c8a23412f8fb814b56fa18c", "5c8a21f22f8fb814b56fa18a"],
+    "price": 1500,
+    "summary": "Explore the pristine alpine landscapes of Switzerland's oldest national park",
+    "description": "Hike through the dramatic mountain scenery, spot wildlife like ibex and marmots, and discover the beauty of the Swiss Alps.",
+    "imageCover": "swiss-park-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2999",
+        "description": "Val Trupchun",
+        "type": "Point",
+        "coordinates": [10.2551, 46.6755],
+        "day": 2
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c3000",
+        "description": "Macun Lakes",
+        "type": "Point",
+        "coordinates": [10.2619, 46.6680],
+        "day": 5
+      }
+    ]
+  }
+,
+{
+    "startLocation": {
+      "description": "Cinque Terre National Park, Italy",
+      "type": "Point",
+      "coordinates": [9.7167, 44.1467],
+      "address": "Cinque Terre National Park, Liguria, Italy"
+    },
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 110,
+    "images": ["cinque-terre-1.jpg", "cinque-terre-2.jpg", "cinque-terre-3.jpg"],
+    "startDates": [
+      "2022-05-01T08:00:00.000Z",
+      "2022-07-15T08:00:00.000Z",
+      "2022-09-30T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c3001",
+    "name": "The Cinque Terre Coastal Walk",
+    "duration": 5,
+    "maxGroupSize": 16,
+    "difficulty": "easy",
+    "guides": ["5c8a23412f8fb814b56fa18c", "5c8a21f22f8fb814b56fa18a"],
+    "price": 950,
+    "summary": "Walk through the colorful villages and stunning coastline of Cinque Terre",
+    "description": "Explore the charming cliffside villages of Italy’s Liguria region while walking the scenic coastal paths of Cinque Terre National Park.",
+    "imageCover": "cinque-terre-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c3002",
+        "description": "Riomaggiore",
+        "type": "Point",
+        "coordinates": [9.7402, 44.0964],
+        "day": 2
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c3003",
+        "description": "Manarola",
+        "type": "Point",
+        "coordinates": [9.7296, 44.1041],
+        "day": 3
+      }
+    ]
+  }
+,
+{
+    "startLocation": {
+      "description": "Plitvice Lakes National Park, Croatia",
+      "type": "Point",
+      "coordinates": [15.6190, 44.8651],
+      "address": "Plitvice Lakes National Park, Lika-Senj County, Croatia"
+    },
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 150,
+    "images": ["plitvice-lakes-1.jpg", "plitvice-lakes-2.jpg", "plitvice-lakes-3.jpg"],
+    "startDates": [
+      "2022-06-15T08:00:00.000Z",
+      "2022-08-25T08:00:00.000Z",
+      "2022-10-05T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c3004",
+    "name": "Plitvice Lakes Waterfall Tour",
+    "duration": 4,
+    "maxGroupSize": 20,
+    "difficulty": "easy",
+    "guides": ["5c8a23412f8fb814b56fa18c", "5c8a21f22f8fb814b56fa18a"],
+    "price": 850,
+    "summary": "Discover the cascading waterfalls and turquoise lakes of Croatia",
+    "description": "Explore the beauty of Plitvice Lakes, a UNESCO World Heritage site, known for its crystal-clear lakes and stunning waterfall systems.",
+    "imageCover": "plitvice-lakes-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c3005",
+        "description": "Veliki Slap",
+        "type": "Point",
+        "coordinates": [15.6190, 44.8651],
+        "day": 1
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c3006",
+        "description": "Kozjak Lake",
+        "type": "Point",
+        "coordinates": [15.6158, 44.8613],
+        "day": 3
+      }
+    ]
+  }
+,
+{
+    "startLocation": {
+      "description": "Saxon Switzerland National Park, Germany",
+      "type": "Point",
+      "coordinates": [14.0833, 50.9333],
+      "address": "Saxon Switzerland National Park, Saxony, Germany"
+    },
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 60,
+    "images": ["saxon-switzerland-1.jpg", "saxon-switzerland-2.jpg", "saxon-switzerland-3.jpg"],
+    "startDates": [
+      "2022-05-15T08:00:00.000Z",
+      "2022-07-10T08:00:00.000Z",
+      "2022-09-25T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c3007",
+    "name": "The Saxon Switzerland Adventure",
+    "duration": 6,
+    "maxGroupSize": 14,
+    "difficulty": "medium",
+    "guides": ["5c8a23412f8fb814b56fa18c", "5c8a21f22f8fb814b56fa18a"],
+    "price": 1050,
+    "summary": "Hike through the dramatic sandstone formations of Saxon Switzerland",
+    "description": "Discover the unique sandstone cliffs, dense forests, and scenic river valleys of Germany's Saxon Switzerland National Park.",
+    "imageCover": "saxon-switzerland-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c3008",
+        "description": "Bastei Bridge",
+        "type": "Point",
+        "coordinates": [14.0737, 50.9656],
+        "day": 3
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c3009",
+        "description": "Schrammsteine",
+        "type": "Point",
+        "coordinates": [14.2167, 50.9208],
+        "day": 5
+      }
+    ]
+  }
+,{
+    "startLocation": {
+      "description": "Vatnajökull National Park, Iceland",
+      "type": "Point",
+      "coordinates": [-16.7488, 64.0632],
+      "address": "Vatnajökull National Park, Southern Region, Iceland"
+    },
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 120,
+    "images": ["vatnajokull-1.jpg", "vatnajokull-2.jpg", "vatnajokull-3.jpg"],
+    "startDates": [
+      "2022-05-01T08:00:00.000Z",
+      "2022-07-15T08:00:00.000Z",
+      "2022-09-10T08:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c3010",
+    "name": "The Vatnajökull Glacier Trek",
+    "duration": 8,
+    "maxGroupSize": 12,
+    "difficulty": "difficult",
+    "guides": ["5c8a23412f8fb814b56fa18c", "5c8a21f22f8fb814b56fa18a"],
+    "price": 1800,
+    "summary": "Trek across Europe's largest glacier in Vatnajökull National Park",
+    "description": "Embark on an adventurous trek across Vatnajökull, Iceland's massive glacier, and witness stunning ice caves, dramatic mountain peaks, and glacial landscapes.",
+    "imageCover": "vatnajokull-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c3011",
+        "description": "Skaftafell",
+        "type": "Point",
+        "coordinates": [-16.8757, 64.0168],
+        "day": 2
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c3012",
+        "description": "Jökulsárlón Glacier Lagoon",
+        "type": "Point",
+        "coordinates": [-16.1794, 64.0486],
+        "day": 6
+      }
+    ]
+  }
+    
+]

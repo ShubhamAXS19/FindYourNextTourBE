@@ -5,6 +5,7 @@ import jwt from "jsonwebtoken";
 import { promisify } from "util";
 import UserModel, { User } from "../Models/user.model";
 import { sendEmailSES } from "../Utils/mailer";
+import crypto from "crypto";
 
 export const protect = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
@@ -52,6 +53,8 @@ export const protect = catchAsync(
     // GRANT ACCESS TO PROTECTED ROUTE
     req.user = currentUser;
     res.locals.user = currentUser;
+
+    console.log("User is logged in");
     next();
   }
 );
@@ -86,7 +89,6 @@ const createSendToken = (
     data: {
       user,
       userId: user._id,
-      verificationCode: user.verificationCode,
     },
   });
 };
@@ -94,6 +96,7 @@ const createSendToken = (
 export const restrictTo = (...roles) => {
   return (req: Request, res: Response, next: NextFunction) => {
     // roles ['admin', 'lead-guide']. role='user'
+    console.log(req.user.role);
     if (!roles.includes(req.user.role)) {
       return next(
         new AppError("You do not have permission to perform this action", 403)
@@ -106,34 +109,57 @@ export const restrictTo = (...roles) => {
 
 export const signup = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    const { name, email, password, passwordConfirm } = req.body;
+    const { name, email, password, passwordConfirm, role } = req.body;
 
     const newUser = await UserModel.create({
-      name: name,
-      email: email,
-      password: password,
-      passwordConfirm: passwordConfirm,
+      name,
+      email,
+      password,
+      passwordConfirm,
+      role: role || "user",
     });
 
-    await sendEmailSES({
-      to: newUser.email,
-      subject: "Verify your email",
-      text: `verification code: ${newUser.verificationCode}. Id: ${newUser._id}`,
-      from: {
-        name: "Find Your Next Hike",
-        address: process.env.SES_FROM_EMAIL as string,
-      },
-    });
+    let emailSent = false;
+    try {
+      await sendEmailSES({
+        to: newUser.email,
+        subject: "Verify your email",
+        text: `verification code: ${newUser.verificationCode}. Id: ${newUser._id}`,
+        from: {
+          name: "Find Your Next Hike",
+          address: process.env.SES_FROM_EMAIL as string,
+        },
+      });
+      emailSent = true;
+    } catch (error: any) {
+      // If email sending fails, delete the user
+      await UserModel.findByIdAndDelete(newUser._id);
 
-    createSendToken(newUser, 201, req, res);
+      if (error.message.includes("Email address is not verified")) {
+        return res.status(400).json({
+          status: "fail",
+          message:
+            "Unable to send verification email. Please try again later or contact support.",
+        });
+      }
+
+      // For other errors, throw to be caught by catchAsync
+      throw new Error("An error occurred during signup. Please try again.");
+    }
+
+    if (emailSent) {
+      createSendToken(newUser, 201, req, res);
+    }
   }
 );
 
-export async function verifyUserHandler(req: Request, res: Response) {
-  const { id, verificationCode } = req.params;
+export const verifyUser = async (req: Request, res: Response) => {
+  const { userId, verificationCode } = req.params;
+  console.log(req.params);
   try {
     // find user by id
-    const user = await UserModel.findById(id);
+    const user = await UserModel.findById(userId);
+    // console.log(user);
     if (!user) {
       return res.status(404).send("User not found");
     }
@@ -150,7 +176,7 @@ export async function verifyUserHandler(req: Request, res: Response) {
   } catch (e: any) {
     return res.status(400).send(e);
   }
-}
+};
 
 export const login = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
@@ -165,6 +191,10 @@ export const login = catchAsync(
 
     if (!user || !(await user.correctPassword(password, user.password))) {
       return next(new AppError("Incorrect email or password", 401));
+    }
+
+    if (!user.verified) {
+      return res.send("Please verify your email before logging in");
     }
 
     // 3) If everything ok, send token to client
@@ -245,15 +275,21 @@ export const resetPassword = catchAsync(
     createSendToken(user, 200, req, res);
   }
 );
+
 export const updatePassword = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     // 1) Get user from collection
     const user = await UserModel.findById(req.user.id).select("+password");
 
     // 2) Check if POSTed current password is correct
-    if (
-      !(await user.correctPassword(req.body.passwordCurrent, user.password))
-    ) {
+    if (!user) {
+      return next(new AppError("User not found.", 404));
+    }
+
+    console.log("User found:", user); // Log the user to debug
+
+    // 2) Check if POSTed current password is correct
+    if (!(await user.correctPassword(req.body.passwordCurrent))) {
       return next(new AppError("Your current password is wrong.", 401));
     }
 

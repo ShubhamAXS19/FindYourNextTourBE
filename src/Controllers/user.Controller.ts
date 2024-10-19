@@ -13,6 +13,7 @@ const filterObj = (obj, ...allowedFields) => {
 };
 
 export const getMe = (req: Request, res: Response, next: NextFunction) => {
+  console.log(req.params.id);
   req.params.id = req.user.id;
   next();
 };

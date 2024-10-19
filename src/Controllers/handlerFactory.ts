@@ -50,8 +50,8 @@ export const createOne = (Model) =>
 
 export const getOne = (Model, popOptions) =>
   catchAsync(async (req: Request, res: Response, next: NextFunction) => {
-    console.log(req.params.id);
     let query = Model.findById(req.params.id);
+
     if (popOptions) query = query.populate(popOptions);
     const doc = await query;
 
@@ -69,7 +69,6 @@ export const getOne = (Model, popOptions) =>
 
 export const getAll = (Model) =>
   catchAsync(async (req: Request, res: Response, next: NextFunction) => {
-    console.log("getAll");
     // To allow for nested GET reviews on tour (hack)
     let filter = {};
     if (req.params.tourId) filter = { tour: req.params.tourId };

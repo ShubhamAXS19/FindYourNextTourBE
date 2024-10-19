@@ -27,6 +27,23 @@ export const createTour = createOne(TourModel);
 export const updateTour = updateOne(TourModel);
 export const deleteTour = deleteOne(TourModel);
 
+export const getTourByName = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const { id } = req.params;
+
+    const tour = await TourModel.findOne({ name: { $eq: id } });
+    if (!tour) {
+      return next(new AppError("No tour found with that name", 404));
+    }
+    res.status(200).json({
+      status: "success",
+      data: {
+        tour,
+      },
+    });
+  }
+);
+
 export const getTourStats = catchAsync(
   async (req: Request, res, next: NextFunction) => {
     const stats = await TourModel.aggregate([
