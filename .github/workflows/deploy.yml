@@ -61,4 +61,6 @@ jobs:
           cd /home/ubuntu/FindYourNextTourBE &&
           git pull origin master &&
           npm install &&
+          npm run build &&
+          pm2 stop FindYourNextHike &&
           pm2 restart FindYourNextHike'
