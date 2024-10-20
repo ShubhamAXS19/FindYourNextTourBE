@@ -45,7 +45,7 @@ app.use(express.json());
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("Welcome to Find Your Hike!!!!");
+  res.send("After a week it finally works");
   console.log("Welcome to Find Your Hike!!!");
 });
 // app.use("/", viewRouter);
