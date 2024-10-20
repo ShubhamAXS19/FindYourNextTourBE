@@ -5,43 +5,39 @@ on:
     branches:
       - master
 
-
 jobs:
   build:
     name: Build the app
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '22.5.1'
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22.5.1'
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Install TypeScript
-      run: npm install -g typescript
+      - name: Install TypeScript
+        run: npm install -g typescript
 
-    - name: Create .env file
-      run: |
-        touch .env
-        echo "PROD_ENV_FILE" >> .env
+      - name: Create .env file
+        run: |
+          touch .env
+          echo "${{ secrets.PROD_ENV_FILE }}" >> .env
 
-    - name: Compile Code
-      run: npm run build
+      - name: Compile Code
+        run: npm run build
 
-
-deploy:
-    - name: Deploy to Production
-      needs: build
-      runs-on: ubuntu-latest
-      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-
-      steps:
+  deploy:
+    name: Deploy to Production
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
@@ -61,8 +57,8 @@ deploy:
           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key ubuntu@${HOST} '
             # Add your deployment commands here
-            cd Honest-Bite_Backend &&
-            git pull origin main &&
-            npm install &&
+            cd Honest-Bite_Backend && 
+            git pull origin main && 
+            npm install && 
             pm2 restart your-app-name
           '
