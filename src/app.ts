@@ -45,7 +45,7 @@ app.use(express.json());
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("Welcome to Find Your Hike!");
+  res.send("Welcome to Find Your Hike!!!!");
   console.log("Hello World!");
 });
 // app.use("/", viewRouter);
@@ -63,8 +63,8 @@ app.use("/api/v1/tours", tourRouter);
 // });
 
 // Start the server
-const port =Number( process.env.PORT ) || 3000;
-const server = app.listen(port,'0.0.0.0', () => {
+const port = Number(process.env.PORT) || 3000;
+const server = app.listen(port, "0.0.0.0", () => {
   console.log(`App running on port ${port}...`);
 });
 
