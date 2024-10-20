@@ -7,7 +7,7 @@ import tourRouter from "./Routes/tour.Route";
 // import reviewRouter from "./Routes/review.Route";
 // import bookingRouter from "./Routes/booking.Route";
 // import viewRouter from "./Routes/view.Route";
-import AWSrouter from "./Routes/testAWS";
+// import AWSrouter from "./Routes/testAWS";
 
 // Initialize Express app
 const app = express();
@@ -45,11 +45,11 @@ app.use(express.json());
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Welcome to Find Your Hike!");
   console.log("Hello World!");
 });
 // app.use("/", viewRouter);
-app.use("/", AWSrouter);
+// app.use("/", AWSrouter);
 app.use("/api/v1/tours", tourRouter);
 // app.use("/api/v1/users", userRouter);
 // app.use("/api/v1/reviews", reviewRouter);
