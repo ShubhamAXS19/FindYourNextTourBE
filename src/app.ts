@@ -46,7 +46,7 @@ app.use(express.json());
 // Routes
 app.get("/", (req, res) => {
   res.send("Welcome to Find Your Hike!!!!");
-  console.log("Hello World!");
+  console.log("Welcome to Find Your Hike!!!");
 });
 // app.use("/", viewRouter);
 // app.use("/", AWSrouter);
