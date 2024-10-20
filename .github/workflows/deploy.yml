@@ -56,9 +56,9 @@ jobs:
         run: |
           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key ubuntu@${HOST} '
-            # Add your deployment commands here
-            cd /home/ubuntu/FindYourNextTourBE && 
-            git pull origin master && 
-            npm install && 
-            pm2 restart FindYourNextHike
-          '
+          export NVM_DIR="$HOME/.nvm" &&
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" &&  # This loads nvm
+          cd /home/ubuntu/FindYourNextTourBE &&
+          git pull origin master &&
+          npm install &&
+          pm2 restart FindYourNextHike'
