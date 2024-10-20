@@ -4,17 +4,17 @@ import {
   pre,
   modelOptions,
   index,
+  DocumentType,
 } from "@typegoose/typegoose";
-// import { IsEmail, MinLength } from "class-validator"; // Optional: for validation
 import bcrypt from "bcryptjs";
 import crypto from "crypto";
 import { nanoid } from "nanoid";
 
 // Hash the password before saving
-@pre<User>("save", async function (next) {
+@pre<User>("save", async function (this: DocumentType<User>, next) {
   if (!this.isModified("password")) return next();
   this.password = await bcrypt.hash(this.password, 12);
-  this.passwordConfirm = undefined; // Remove confirm password field
+  (this as any).passwordConfirm = undefined; // Use type assertion here
   next();
 })
 // Set passwordChangedAt field when password is changed
@@ -24,7 +24,7 @@ import { nanoid } from "nanoid";
   next();
 })
 @modelOptions({ schemaOptions: { timestamps: true } })
-@index({ email: 1 }, { unique: true }) // Unique index for email
+@index({ email: 1 }, { unique: true })
 export class User {
   @prop({ required: [true, "User must have a name"] })
   public name!: string;
@@ -33,11 +33,10 @@ export class User {
     required: [true, "User must have an email"],
     lowercase: true,
     validate: {
-      validator: (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value), // Basic email validation
+      validator: (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
       message: "Please provide a valid email",
     },
   })
-  //   @IsEmail() // Optional: for validation
   public email!: string;
 
   @prop({ default: "default.jpg" })
@@ -47,15 +46,14 @@ export class User {
   public role?: string;
 
   @prop({ required: [true, "User must have a password"], select: false })
-  //   @MinLength(8) // Optional: for validation
   public password!: string;
 
   @prop({
     required: [true, "User must confirm their password"],
     select: false,
     validate: {
-      validator: function (this: User, value: string) {
-        return value === this.password; // Custom validation to ensure passwords match
+      validator: function (this: DocumentType<User>, value: string) {
+        return value === this.password;
       },
       message: "Passwords are not the same!",
     },
@@ -95,7 +93,7 @@ export class User {
       );
       return JWTTimestamp < changedTimestamp;
     }
-    return false; // False means NOT changed
+    return false;
   }
 
   public createPasswordResetToken(): string {
@@ -104,11 +102,10 @@ export class User {
       .createHash("sha256")
       .update(resetToken)
       .digest("hex");
-    this.passwordResetExpires = new Date(Date.now() + 10 * 60 * 1000); // Token expires in 10 minutes
+    this.passwordResetExpires = new Date(Date.now() + 10 * 60 * 1000);
     return resetToken;
   }
 }
 
-// Create UserModel
 const UserModel = getModelForClass(User);
 export default UserModel;

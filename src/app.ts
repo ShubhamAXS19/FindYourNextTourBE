@@ -3,9 +3,9 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import tourRouter from "./Routes/tour.Route";
-import userRouter from "./Routes/user.Route";
-import reviewRouter from "./Routes/review.Route";
-import bookingRouter from "./Routes/booking.Route";
+// import userRouter from "./Routes/user.Route";
+// import reviewRouter from "./Routes/review.Route";
+// import bookingRouter from "./Routes/booking.Route";
 // import viewRouter from "./Routes/view.Route";
 import AWSrouter from "./Routes/testAWS";
 
@@ -44,16 +44,16 @@ app.use(express.json());
 // app.use(express.static("public"));
 
 // Routes
-// app.get("/", (req, res) => {
-//   res.send("Hello World!");
-//   console.log("Hello World!");
-// });
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+  console.log("Hello World!");
+});
 // app.use("/", viewRouter);
 app.use("/", AWSrouter);
 app.use("/api/v1/tours", tourRouter);
-app.use("/api/v1/users", userRouter);
-app.use("/api/v1/reviews", reviewRouter);
-app.use("/api/v1/bookings", bookingRouter);
+// app.use("/api/v1/users", userRouter);
+// app.use("/api/v1/reviews", reviewRouter);
+// app.use("/api/v1/bookings", bookingRouter);
 
 // Global error handling for uncaught exceptions
 // process.on("uncaughtException", (err) => {
@@ -61,8 +61,6 @@ app.use("/api/v1/bookings", bookingRouter);
 //   console.error(err.name, err.message);
 //   process.exit(1);
 // });
-
-// console.log(process.env);
 
 // Start the server
 const port = process.env.PORT || 3000;

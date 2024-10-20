@@ -1,6 +1,6 @@
 import { prop, getModelForClass, Ref } from "@typegoose/typegoose";
 
-import { User } from "./user.model";
+import { User } from "./user.Model";
 import { Tour } from "./tour.Model";
 
 export class Review {

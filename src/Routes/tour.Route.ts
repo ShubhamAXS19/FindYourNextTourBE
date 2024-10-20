@@ -1,24 +1,22 @@
 import express from "express";
 import {
-  checkID,
   aliasTopTours,
   getAllTours,
   getTourStats,
   getToursWithin,
   getDistances,
-  createTour,
+  // createTour,
   getTourByName,
-  updateTour,
-  deleteTour,
+  // updateTour,
+  // deleteTour,
 } from "../Controllers/tour.Controller";
-import {
-  protect,
-  restrictTo,
-  getMonthlyPlan,
-  uploadTourImages,
-  resizeTourImages,
-} from "../Controllers/auth.Controller";
-import reviewRouter from "./review.Route";
+// import {
+//   protect,
+//   restrictTo,
+//   uploadTourImages,
+//   resizeTourImages,
+// } from "../Controllers/auth.Controller";
+// import reviewRouter from "./review.Route";
 
 const router = express.Router();
 
@@ -27,7 +25,7 @@ const router = express.Router();
 // POST /tour/234fad4/reviews
 // GET /tour/234fad4/reviews
 
-router.use("/:tourId/reviews", reviewRouter);
+// router.use("/:tourId/reviews", reviewRouter);
 
 router.route("/top-5-cheap").get(aliasTopTours, getAllTours);
 
@@ -43,21 +41,17 @@ router
 
 router.route("/distances/:latlng/unit/:unit").get(getDistances);
 
-router
-  .route("/")
-  .get(getAllTours) //tested
-  .post(protect, restrictTo("admin", "lead-guide"), createTour);
+router.route("/").get(getAllTours); //tested
+// .post(protect, restrictTo("admin", "lead-guide"), createTour);
 
-router
-  .route("/:id")
-  .get(getTourByName) // tested
-  .patch(
-    protect,
-    restrictTo("admin", "lead-guide"),
-    uploadTourImages,
-    resizeTourImages,
-    updateTour
-  )
-  .delete(protect, restrictTo("admin", "lead-guide"), deleteTour);
+router.route("/:id").get(getTourByName); // tested
+// .patch(
+//   protect,
+//   restrictTo("admin", "lead-guide"),
+//   uploadTourImages,
+//   resizeTourImages,
+//   updateTour
+// )
+// .delete(protect, restrictTo("admin", "lead-guide"), deleteTour);
 
 export default router;

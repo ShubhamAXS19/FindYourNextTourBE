@@ -31,3 +31,6 @@ dist-ssr
 # Environment variables
 .env
 /Shubham-Dev-Projects_accessKeys.csv
+
+ssh-key
+ssh-key.pub

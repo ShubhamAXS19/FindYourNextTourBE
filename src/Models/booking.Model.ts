@@ -1,6 +1,6 @@
 import { prop, getModelForClass, pre, Ref } from "@typegoose/typegoose";
 
-import { User } from "./user.model";
+import { User } from "./user.Model";
 import { Tour } from "./tour.Model";
 
 @pre<Booking>("find", function () {
@@ -33,4 +33,4 @@ export class Booking {
 }
 
 const BookingModel = getModelForClass(Booking);
-export { BookingModel };
+export default BookingModel;

@@ -2,8 +2,10 @@ import catchAsync from "../Utils/catchAsync";
 import AppError from "../Utils/appError";
 import APIFeatures from "../Utils/apiFeatures";
 import { Request, Response, NextFunction } from "express";
+import { DocumentType } from "@typegoose/typegoose";
+import { Model, PopulateOptions, Query } from "mongoose";
 
-export const deleteOne = (Model) =>
+export const deleteOne = <T extends DocumentType<any>>(Model: Model<T>) =>
   catchAsync(async (req: Request, res: Response, next: NextFunction) => {
     const doc = await Model.findByIdAndDelete(req.params.id);
 
@@ -17,7 +19,7 @@ export const deleteOne = (Model) =>
     });
   });
 
-export const updateOne = (Model) =>
+export const updateOne = <T extends DocumentType<any>>(Model: Model<T>) =>
   catchAsync(async (req: Request, res: Response, next: NextFunction) => {
     const doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
@@ -36,7 +38,7 @@ export const updateOne = (Model) =>
     });
   });
 
-export const createOne = (Model) =>
+export const createOne = <T extends DocumentType<any>>(Model: Model<T>) =>
   catchAsync(async (req: Request, res: Response, next: NextFunction) => {
     const doc = await Model.create(req.body);
 
@@ -48,11 +50,17 @@ export const createOne = (Model) =>
     });
   });
 
-export const getOne = (Model, popOptions) =>
+export const getOne = <T extends DocumentType<any>>(
+  Model: Model<T>,
+  popOptions?: PopulateOptions | PopulateOptions[]
+) =>
   catchAsync(async (req: Request, res: Response, next: NextFunction) => {
-    let query = Model.findById(req.params.id);
+    let query: Query<T | null, T> = Model.findById(req.params.id);
 
-    if (popOptions) query = query.populate(popOptions);
+    if (popOptions) {
+      query = query.populate(popOptions) as Query<T | null, T>;
+    }
+
     const doc = await query;
 
     if (!doc) {
@@ -67,7 +75,7 @@ export const getOne = (Model, popOptions) =>
     });
   });
 
-export const getAll = (Model) =>
+export const getAll = <T extends DocumentType<any>>(Model: Model<T>) =>
   catchAsync(async (req: Request, res: Response, next: NextFunction) => {
     // To allow for nested GET reviews on tour (hack)
     let filter = {};
@@ -78,7 +86,7 @@ export const getAll = (Model) =>
       .sort()
       .limitFields()
       .paginate();
-    // const doc = await features.query.explain();
+
     const doc = await features.query;
 
     // SEND RESPONSE

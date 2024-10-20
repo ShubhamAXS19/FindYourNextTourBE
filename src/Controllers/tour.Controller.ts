@@ -80,7 +80,7 @@ export const getTourStats = catchAsync(
 
 export const getMonthlyPlan = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    const year = req.params.year * 1; // 2021
+    const year = Number(req.params.year);
 
     const plan = await TourModel.aggregate([
       {
@@ -125,10 +125,15 @@ export const getMonthlyPlan = catchAsync(
     });
   }
 );
+
 export const getDistances = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const { latlng, unit } = req.params;
-    const [lat, lng] = latlng.split(",");
+    const [latStr, lngStr] = latlng.split(",");
+
+    // Convert latitude and longitude to numbers
+    const lat = parseFloat(latStr);
+    const lng = parseFloat(lngStr);
 
     const multiplier = unit === "mi" ? 0.000621371 : 0.001;
 
@@ -168,12 +173,14 @@ export const getDistances = catchAsync(
     });
   }
 );
+
 export const getToursWithin = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const { distance, latlng, unit } = req.params;
     const [lat, lng] = latlng.split(",");
 
-    const radius = unit === "mi" ? distance / 3963.2 : distance / 6378.1;
+    const radius =
+      unit === "mi" ? Number(distance) / 3963.2 : Number(distance) / 6378.1;
 
     if (!lat || !lng) {
       next(

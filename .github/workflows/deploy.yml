@@ -1,0 +1,68 @@
+name: CI/CD Pipeline for Node.js App
+
+on:
+  push:
+    branches:
+      - master
+
+
+jobs:
+  build:
+    name: Build the app
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '22.5.1'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Install TypeScript
+      run: npm install -g typescript
+
+    - name: Create .env file
+      run: |
+        touch .env
+        echo "PROD_ENV_FILE" >> .env
+
+    - name: Compile Code
+      run: npm run build
+
+
+deploy:
+    - name: Deploy to Production
+      needs: build
+      runs-on: ubuntu-latest
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+
+      steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
+
+      - name: Deploy to EC2
+        env:
+          PRIVATE_KEY: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+          HOST: ${{ secrets.EC2_HOST }}
+          USER: ubuntu
+        run: |
+          echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+          ssh -o StrictHostKeyChecking=no -i private_key ubuntu@${HOST} '
+            # Add your deployment commands here
+            cd Honest-Bite_Backend &&
+            git pull origin main &&
+            npm install &&
+            pm2 restart your-app-name
+          '
